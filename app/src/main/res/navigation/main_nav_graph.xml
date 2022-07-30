@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainView2">
+    <fragment
+        android:id="@+id/mainView2"
+        android:name="com.example.navprac.MainView"
+        android:label="mainview"
+        tools:layout="@layout/mainview" >
+        <action
+            android:id="@+id/action_mainView2_to_ability2"
+            app:destination="@id/ability2" />
+        <action
+            android:id="@+id/action_mainView2_to_ultimatefrag2"
+            app:destination="@id/ultimatefrag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ultimatefrag2"
+        android:name="com.example.navprac.ultimatefrag"
+        android:label="ultimate"
+        tools:layout="@layout/ultimate" >
+        <action
+            android:id="@+id/action_ultimatefrag2_to_neonultifrag2"
+            app:destination="@id/neonultifrag2" />
+        <action
+            android:id="@+id/action_ultimatefrag2_to_jettultifrag2"
+            app:destination="@id/jettultifrag2" />
+        <action
+            android:id="@+id/action_ultimatefrag2_to_reynaultifrag2"
+            app:destination="@id/reynaultifrag2" />
+        <action
+            android:id="@+id/action_ultimatefrag2_to_sovaultfrag2"
+            app:destination="@id/sovaultfrag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ability2"
+        android:name="com.example.navprac.ability"
+        android:label="ability"
+        tools:layout="@layout/ability" >
+        <action
+            android:id="@+id/action_ability2_to_sovaabilityfrag2"
+            app:destination="@id/sovaabilityfrag2" />
+        <action
+            android:id="@+id/action_ability2_to_reynaabilityfrag2"
+            app:destination="@id/reynaabilityfrag2" />
+        <action
+            android:id="@+id/action_ability2_to_neonabilityfrag2"
+            app:destination="@id/neonabilityfrag2" />
+        <action
+            android:id="@+id/action_ability2_to_jettabilityfrag2"
+            app:destination="@id/jettabilityfrag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/jettultifrag2"
+        android:name="com.example.navprac.jettultifrag"
+        android:label="jett_ultimate"
+        tools:layout="@layout/jett_ultimate" />
+    <fragment
+        android:id="@+id/jettabilityfrag2"
+        android:name="com.example.navprac.jettabilityfrag"
+        android:label="jettability"
+        tools:layout="@layout/jettability" />
+    <fragment
+        android:id="@+id/neonabilityfrag2"
+        android:name="com.example.navprac.neonabilityfrag"
+        android:label="neon_ability"
+        tools:layout="@layout/neon_ability" />
+    <fragment
+        android:id="@+id/neonultifrag2"
+        android:name="com.example.navprac.neonultifrag"
+        android:label="neon_ultimate"
+        tools:layout="@layout/neon_ultimate" />
+    <fragment
+        android:id="@+id/reynaabilityfrag2"
+        android:name="com.example.navprac.reynaabilityfrag"
+        android:label="reyna_ability"
+        tools:layout="@layout/reyna_ability" />
+    <fragment
+        android:id="@+id/reynaultifrag2"
+        android:name="com.example.navprac.reynaultifrag"
+        android:label="reyna_ultimate"
+        tools:layout="@layout/reyna_ultimate" />
+    <fragment
+        android:id="@+id/sovaultfrag2"
+        android:name="com.example.navprac.sovaultfrag"
+        android:label="sova__ultimate"
+        tools:layout="@layout/sova__ultimate" />
+    <fragment
+        android:id="@+id/sovaabilityfrag2"
+        android:name="com.example.navprac.sovaabilityfrag"
+        android:label="sova_ability"
+        tools:layout="@layout/sova_ability" />
+</navigation>
